@@ -19,8 +19,8 @@ return new class extends Migration
             $table->text('description');
             $table->string('type');
             $table->bigInteger('stock');
-            $table->float('buying_price');
-            $table->float('selling_price');
+            $table->bigInteger('buying_price');
+            $table->bigInteger('selling_price');
             $table->text('image_url');
             $table->timestamps();
             $table->softDeletes();

@@ -18,8 +18,8 @@ return new class extends Migration
             $table->unsignedBigInteger('transaction_id');
             $table->unsignedBigInteger('item_id');
             $table->integer('qty');
-            $table->float('price');
-            $table->float('total_price');
+            $table->bigInteger('price');
+            $table->bigInteger('total_price');
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('transaction_id')->references('id')->on('transactions')->onDelete('no action');

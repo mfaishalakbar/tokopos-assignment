@@ -83,7 +83,7 @@
 
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" value="{{ old('email', $data->email) }}" class="form-control @error('email') is-invalid @enderror" name="email">
+                <input disabled type="email" value="{{ old('email', $data->email) }}" class="form-control @error('email') is-invalid @enderror" name="email">
             
             @error('email')
                 <span class="invalid-feedback" role="alert">
