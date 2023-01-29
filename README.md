@@ -1,4 +1,4 @@
-# POSBinus
+# TokoPOS
 Simple Point-of-Sales for Group Assignment 
 
 # How to Start
