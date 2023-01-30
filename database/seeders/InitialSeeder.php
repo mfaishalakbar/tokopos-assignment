@@ -59,7 +59,7 @@ class InitialSeeder extends Seeder
             'admin' => $permissionNames,
             'staff' => array_filter($permissionNames, function($var) {
                 // Staff cannot modify or alter user
-                return !\str_starts_with($var, "staff:") || $var;
+                return !\str_starts_with($var, "staff:");
             }),
             'customer' => [
                 'item:browse',
